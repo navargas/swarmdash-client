@@ -54,7 +54,7 @@ class AbstractClient:
 		
 		# Configure logging
 		self.logger = logging.getLogger(self.__module__+"."+self.__class__.__name__)
-		self.logger.setLevel(logging.INFO)
+		self.logger.setLevel(logging.NOTSET)
 		
 		if logHandlers:
 			if isinstance(logHandlers, list):
